@@ -56,3 +56,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+test/geany_run_script.bat
+# bat
+*.bat
