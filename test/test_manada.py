@@ -17,7 +17,8 @@ class TestAnimals(TestCase):
     def test_animais(self):
         from manada.animais import Animal
         a = Animal()
-        self.assertRaises(NotImplementedError, a.barulho())
+        with self.assertRaises(NotImplementedError):
+            a.barulho()
 
 if __name__ == "__main__":
     unittest.main()
