@@ -1,7 +1,7 @@
 import unittest
 from unittest.case import TestCase
 
-from os import path
+import os 
 import sys
 lib_path = os.path.abspath(os.path.join('..'))
 sys.path.append(lib_path)
@@ -14,10 +14,8 @@ import manada
         #self.assertTrue(m)
 
 class TestAnimals(TestCase):
-    from manada import animals
-    from animals import Animal
-    
-    def test_animals(self):
+    def test_animais(self):
+        from manada.animais import Animal
         a = Animal()
         self.assertRaises(NotImplementedError, a.barulho())
 
